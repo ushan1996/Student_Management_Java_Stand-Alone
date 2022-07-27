@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="486.0" prefWidth="412.0" style="-fx-background-color: #FDFEFE;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+   <children>
+      <Label layoutX="30.0" layoutY="29.0" text="Login " textFill="#1b0000">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="95.0" text="User Name">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="188.0" text="Password">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUserName" layoutX="31.0" layoutY="131.0" prefHeight="46.0" prefWidth="351.0" promptText="Enter User Name">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Button layoutX="60.0" layoutY="292.0" mnemonicParsing="false" onAction="#btnLoginOnAction" prefHeight="46.0" prefWidth="283.0" style="-fx-background-color: #110BAE;" text="Login" textFill="#f0f0f0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Label layoutX="123.0" layoutY="454.0" text="Designed By: Ushan Jayamanne" />
+      <Label layoutX="124.0" layoutY="346.0" onMouseClicked="#lblCreateNewAccountOnMouseClicked" text="Create New Account" textFill="#0007c4" underline="true">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Label>
+      <ImageView fitHeight="73.0" fitWidth="103.0" layoutX="293.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="txtPassword" layoutX="30.0" layoutY="222.0" prefHeight="46.0" prefWidth="351.0" promptText="Enter Password">
+         <font>
+            <Font size="16.0" />
+         </font></PasswordField>
+   </children>
+</AnchorPane>

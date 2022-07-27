@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="783.0" prefWidth="864.0" style="-fx-background-color: #FDFEFE;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StudentDetailsFormController">
+   <children>
+      <Label layoutX="33.0" layoutY="17.0" prefHeight="59.0" prefWidth="363.0" text="Student Details Form " textAlignment="CENTER" textFill="#0d0d0d">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSmsWelcome" layoutX="32.0" layoutY="73.0" text="Hi Ushan Welcome to the Student Management System" textFill="#0d0d0d">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label fx:id="lblSmsId" layoutX="122.0" layoutY="105.0" text="Id" textFill="#0d0d0d">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Button layoutX="628.0" layoutY="67.0" mnemonicParsing="false" onAction="#btnSmsAddNewStudent" prefHeight="38.0" prefWidth="202.0" style="-fx-background-color: green;" text="+ Add New Student" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Blend mode="RED" />
+         </effect>
+      </Button>
+      <Button layoutX="627.0" layoutY="19.0" mnemonicParsing="false" onAction="#btnLogOutOnAction" prefHeight="38.0" prefWidth="202.0" style="-fx-background-color: red;" text="Log Out" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
+      <TableView fx:id="tblViewStudentDetails" layoutX="34.0" layoutY="149.0" prefHeight="398.0" prefWidth="798.0">
+        <columns>
+          <TableColumn prefWidth="89.60003662109375" text="ID" />
+          <TableColumn prefWidth="97.5999755859375" text="User_ID" />
+            <TableColumn prefWidth="228.0" text="Name" />
+            <TableColumn prefWidth="108.79998779296875" text="Age" />
+            <TableColumn prefWidth="104.800048828125" text="Grade" />
+            <TableColumn prefWidth="168.00006103515625" text="City" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="81.0" fitWidth="124.0" layoutX="17.0" layoutY="681.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtName" layoutX="517.0" layoutY="570.0" prefHeight="38.0" prefWidth="316.0">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font></TextField>
+      <TextField fx:id="txtAge" layoutX="517.0" layoutY="618.0" prefHeight="38.0" prefWidth="316.0">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font></TextField>
+      <TextField fx:id="txtGrade" layoutX="517.0" layoutY="665.0" prefHeight="38.0" prefWidth="316.0">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font></TextField>
+      <TextField fx:id="txtCity" layoutX="517.0" layoutY="714.0" prefHeight="38.0" prefWidth="316.0">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font></TextField>
+      <Button fx:id="btnUpdate" layoutX="214.0" layoutY="645.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="20.0" prefWidth="202.0" style="-fx-background-color: Green;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
+      <Button fx:id="btnDelete" layoutX="214.0" layoutY="694.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="26.0" prefWidth="202.0" style="-fx-background-color: red;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
+      <Label fx:id="lblStudentId" layoutX="324.0" layoutY="581.0" text=".">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label layoutX="33.0" layoutY="104.0" prefHeight="27.0" prefWidth="88.0" text="User Id :: ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="456.0" layoutY="576.0" text="Name">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="463.0" layoutY="624.0" text="Age">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="455.0" layoutY="671.0" text="Grade">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="463.0" layoutY="720.0" text="City">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="214.0" layoutY="580.0" text="Student Id">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
