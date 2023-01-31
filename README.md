@@ -21,3 +21,5 @@ Main Student details page
 Add New Student Page
 
 ![image](https://user-images.githubusercontent.com/64035537/215861489-64ed71c9-37ea-47e4-93cf-1e92ec060d7d.png)
+
+Link :: https://www.linkedin.com/posts/ushan-jayamanne-05502b1b7_java-javafx-activity-6951937838611341312-sGAe?utm_source=share&utm_medium=member_desktop
